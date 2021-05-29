@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+
+<fx:root prefHeight="106.0" prefWidth="364.0" type="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <javafx.scene.layout.StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <ImageView fx:id="icon" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_RIGHT" />
+          </children>
+      </javafx.scene.layout.StackPane>
+       <Button fx:id="button" onAction="#buttonClicked" mnemonicParsing="false" prefWidth="285.0" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+   </children>
+</fx:root>
