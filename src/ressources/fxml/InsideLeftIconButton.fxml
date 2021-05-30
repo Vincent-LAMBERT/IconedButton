@@ -6,30 +6,31 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
 <fx:root prefHeight="106.0" prefWidth="364.0" type="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="257.0" mnemonicParsing="false">
+      <Button fx:id="btn" alignment="CENTER" contentDisplay="CENTER" maxHeight="257.0" mnemonicParsing="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <graphic>
-            <AnchorPane>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
                <children>
-                  <Label fx:id="label" layoutX="146.0" layoutY="10.0" prefHeight="140.0" prefWidth="291.0" text="Label" textAlignment="CENTER" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
-                     <font>
-                        <Font size="38.0" />
-                     </font>
-                  </Label>
-                  <Group layoutX="10.0" layoutY="10.0">
+                  <Group>
                      <children>
-                        <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="150.0" layoutX="-14.0" layoutY="-7.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="icon" fitHeight="150.0" fitWidth="150.0" layoutX="-14.0" layoutY="-7.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/check.png" />
                            </image>
                         </ImageView>
                      </children>
                   </Group>
+                  <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" prefHeight="150.0" prefWidth="156.0" text="Label" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
                </children>
-            </AnchorPane>
+            </HBox>
          </graphic>
       </Button>   
    </children>

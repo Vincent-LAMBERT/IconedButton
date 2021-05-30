@@ -1,4 +1,5 @@
 .roundbutton {
-  -fx-background-radius: 500;
-  -fx-padding: 0;
+  -fx-background-radius: 100%;
+  -fx-background-position: center;
+  -fx-border-width: 50;
 }

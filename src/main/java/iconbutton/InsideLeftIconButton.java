@@ -25,6 +25,7 @@ import javafx.scene.layout.StackPane;
  * A button with image at its left
  */
 public class InsideLeftIconButton extends AnchorPane {
+    @FXML protected Button btn;
     @FXML protected Label label;
     @FXML protected ImageView icon;
 
@@ -39,6 +40,8 @@ public class InsideLeftIconButton extends AnchorPane {
         } catch (IOException exception) {
             throw new RuntimeException(exception);
         }
+        icon.fitWidthProperty().bind(btn.heightProperty().subtract(10));
+        icon.fitHeightProperty().bind(btn.heightProperty().subtract(10));
     }
     
     public String getText() {

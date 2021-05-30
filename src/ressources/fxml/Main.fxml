@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import iconbutton.InsideLeftIconButton?>
+<?import iconbutton.MultipleButtons?>
 <?import iconbutton.NeoCheckButton?>
-<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<fx:root maxHeight="800.0" maxWidth="800.0" type="TilePane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="692.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iconbutton.Test">
    <children>
-      <NeoCheckButton onAction="#handleCheck" text="Chekc" />
-      <NeoCheckButton onAction="#handleUnCheck" text="ùl,lqdsf" />
+      <MultipleButtons fx:id="multiple" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onCentralAction="#handleCentral" onNeAction="#handleNe" onNoAction="#handleNo" onSeAction="#handleSe" onSoAction="#handleSo" prefHeight="455.0" prefWidth="453.0" />
+      <InsideLeftIconButton layoutX="26.0" layoutY="483.0" prefHeight="89.0" prefWidth="445.0" />
+      <NeoCheckButton layoutX="558.0" layoutY="159.0" prefHeight="248.0" prefWidth="97.0" />
    </children>
-</fx:root>
+</AnchorPane>
