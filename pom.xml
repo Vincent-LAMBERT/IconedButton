@@ -95,7 +95,9 @@
         <resource>
             <directory>src/ressources</directory>
             <includes>
-                <include>*.fxml</include>
+              <include>fxml/*.fxml</include>
+              <include>images/*.png</include>
+              <include>css/*.css</include>
             </includes>
         </resource>
     </resources>

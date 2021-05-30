@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import iconbutton.NeoCheckButton?>
+<?import javafx.scene.layout.TilePane?>
+
+<fx:root maxHeight="800.0" maxWidth="800.0" type="TilePane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <NeoCheckButton onAction="#handleCheck" text="Chekc" />
+      <NeoCheckButton onAction="#handleUnCheck" text="ùl,lqdsf" />
+   </children>
+</fx:root>

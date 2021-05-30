@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.net.URL?>
+
+
+<fx:root type="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="centralButton" stylesheets="@../css/styles.css" styleClass="roundbutton" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <Button fx:id="noButton" stylesheets="@../css/styles.css" styleClass="roundbutton" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="neButton" stylesheets="@../css/styles.css" styleClass="roundbutton" layoutX="160.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="soButton" stylesheets="@../css/styles.css" styleClass="roundbutton" layoutY="160.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+      <Button fx:id="seButton" stylesheets="@../css/styles.css" styleClass="roundbutton" layoutX="160.0" layoutY="160.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+   <stylesheets>
+      <URL value="@../css/style.css" />
+   </stylesheets>
+</fx:root>

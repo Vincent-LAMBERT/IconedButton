@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="106.0" prefWidth="364.0" type="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="257.0" mnemonicParsing="false">
+         <graphic>
+            <AnchorPane>
+               <children>
+                  <Label fx:id="label" layoutX="146.0" layoutY="10.0" prefHeight="140.0" prefWidth="291.0" text="Label" textAlignment="CENTER" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+                  <Group layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="150.0" layoutX="-14.0" layoutY="-7.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/check.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Group>
+               </children>
+            </AnchorPane>
+         </graphic>
+      </Button>   
+   </children>
+</fx:root>

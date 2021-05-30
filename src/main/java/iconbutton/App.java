@@ -1,8 +1,12 @@
 package iconbutton;
 
+import java.io.IOException;
+
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -17,8 +21,9 @@ public class App extends Application {
         var javaVersion = SystemInfo.javaVersion();
         var javafxVersion = SystemInfo.javafxVersion();
 
-        IconedButton iconedbutton = new IconedButton();
-        iconedbutton.setText("Hello!");
+
+        MultipleButtons iconedbutton = new MultipleButtons();
+        iconedbutton.setCentralImage(getClass().getResource("/images/check.png"));
         
         stage.setScene(new Scene(iconedbutton));
         stage.setTitle("Iconed Button");
