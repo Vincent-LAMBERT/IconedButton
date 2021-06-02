@@ -51,6 +51,14 @@ public class InsideLeftIconButton extends AnchorPane {
     public void setText(String value) {
         label.setText(value);
     }
+    
+    public String getImg() {
+        return label.getText();
+    }
+    
+    public void setImg(String value) {
+        icon.setImage(new Image(value));
+    }
 
 
     public final ObjectProperty<EventHandler<ActionEvent>> onActionProperty() { return onAction; }
