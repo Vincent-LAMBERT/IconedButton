@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import iconbutton.InsideLeftIconButton?>
-<?import iconbutton.MultipleButtons?>
-<?import iconbutton.NeoCheckButton?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="692.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iconbutton.Test">
+<AnchorPane prefHeight="168.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iconbutton.Test">
    <children>
-      <MultipleButtons fx:id="multiple" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onCentralAction="#handleCentral" onNeAction="#handleNe" onNoAction="#handleNo" onSeAction="#handleSe" onSoAction="#handleSo" prefHeight="455.0" prefWidth="453.0" />
-      <InsideLeftIconButton layoutX="26.0" layoutY="483.0" prefHeight="89.0" prefWidth="445.0" />
-      <NeoCheckButton layoutX="558.0" layoutY="159.0" prefHeight="248.0" prefWidth="97.0" />
+      <InsideLeftIconButton layoutX="67.0" layoutY="188.0" prefHeight="168.0" prefWidth="403.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../../Character-creator/software/src/ressources/images/race.png" />
+         </image>
+      </InsideLeftIconButton>
    </children>
 </AnchorPane>

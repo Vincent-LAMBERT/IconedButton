@@ -4,7 +4,7 @@ package iconbutton;
 
 import java.io.IOException;
 
-
+import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.ObjectPropertyBase;
 import javafx.beans.property.SimpleObjectProperty;
@@ -21,6 +21,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 
 /**
@@ -30,6 +31,7 @@ public class InsideLeftIconButton extends AnchorPane {
     @FXML protected Button btn;
     @FXML protected Label label;
     @FXML protected ImageView icon;
+    @FXML protected HBox hbox;
 
 
     public InsideLeftIconButton() {
@@ -42,9 +44,8 @@ public class InsideLeftIconButton extends AnchorPane {
         } catch (IOException exception) {
             throw new RuntimeException(exception);
         }
-        
-        icon.fitWidthProperty().bind(btn.heightProperty().multiply(1));
-        icon.fitHeightProperty().bind(btn.heightProperty().subtract(1));
+        icon.fitWidthProperty().bind(btn.heightProperty().subtract(18));
+        icon.fitHeightProperty().bind(btn.heightProperty().subtract(18));
     }
     
     public String getText() {

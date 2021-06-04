@@ -1,10 +1,12 @@
 iconbutton/MultipleButtons$4.class
 iconbutton/MultipleButtons.class
 iconbutton/events/CentralButtonEvent.class
+iconbutton/InsideLeftIconButton$3.class
 iconbutton/InsideLeftIconButton.class
 iconbutton/events/MultipleButtonEvent.class
 iconbutton/MultipleButtons$1.class
 module-info.class
+iconbutton/InsideLeftIconButton$2.class
 iconbutton/MultipleButtons$3.class
 iconbutton/NeoCheckButton$1.class
 iconbutton/MultipleButtons$5.class
