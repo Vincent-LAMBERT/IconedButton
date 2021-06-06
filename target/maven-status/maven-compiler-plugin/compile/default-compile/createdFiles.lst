@@ -11,6 +11,7 @@ iconbutton/MultipleButtons$3.class
 iconbutton/NeoCheckButton$1.class
 iconbutton/MultipleButtons$5.class
 iconbutton/events/NoButtonEvent.class
+iconbutton/InsideLeftIconButton$4.class
 iconbutton/events/SoButtonEvent.class
 iconbutton/events/NeButtonEvent.class
 iconbutton/SystemInfo.class

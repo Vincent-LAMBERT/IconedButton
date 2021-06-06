@@ -4,9 +4,12 @@ package iconbutton;
 
 import java.io.IOException;
 
+import javafx.beans.binding.Bindings;
+import javafx.beans.binding.DoubleBinding;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.ObjectPropertyBase;
+import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.StringProperty;
 import javafx.css.CssMetaData;
@@ -21,6 +24,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 
@@ -30,7 +36,8 @@ import javafx.scene.layout.StackPane;
 public class InsideLeftIconButton extends AnchorPane {
     @FXML protected Button btn;
     @FXML protected Label label;
-    @FXML protected ImageView icon;
+    @FXML protected AnchorPane internAnch;
+    @FXML protected AnchorPane img;
     @FXML protected HBox hbox;
 
 
@@ -44,8 +51,17 @@ public class InsideLeftIconButton extends AnchorPane {
         } catch (IOException exception) {
             throw new RuntimeException(exception);
         }
-        icon.fitWidthProperty().bind(btn.heightProperty().subtract(18));
-        icon.fitHeightProperty().bind(btn.heightProperty().subtract(18));
+        img.minWidthProperty().bind(internAnch.heightProperty().multiply(1));
+        DoubleBinding db = new DoubleBinding() {
+            {
+                super.bind(btn.heightProperty(), btn.widthProperty());
+            }
+            @Override
+            protected double computeValue() {
+                return (btn.widthProperty().get() - btn.heightProperty().get());
+            }
+        };
+        label.minWidthProperty().bind(db.subtract(50));
     }
     
     public String getText() {
@@ -79,11 +95,12 @@ public class InsideLeftIconButton extends AnchorPane {
 
     private ObjectProperty<Image> image;
 
-    public final void setImage(Image value) {
-        icon.setImage(value);
+    public final void setImage(Image image) {
+        Background backgrnd = new Background(new BackgroundImage(image, null, null, null, null));
+        img.setBackground(backgrnd);
     }
     public final Image getImage() {
-        return icon.getImage() == null ? null : icon.getImage();
+        return img.getBackground().getImages().get(0).getImage();
     }
 
     private Image oldImage;
@@ -93,7 +110,7 @@ public class InsideLeftIconButton extends AnchorPane {
 
                 @Override
                 public Object getBean() {
-                    return icon;
+                    return img;
                 }
 
                 @Override
@@ -116,7 +133,7 @@ public class InsideLeftIconButton extends AnchorPane {
             imageUrl = new StyleableStringProperty() {
                 @Override
                 public Object getBean() {
-                    return icon;
+                    return img;
                 }
 
                 @Override
