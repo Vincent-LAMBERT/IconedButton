@@ -3,8 +3,8 @@
 <?import iconbutton.NeoCheckButtonWithIcon?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="116.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="278.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <NeoCheckButtonWithIcon layoutX="14.0" layoutY="15.0" minWidth="178.0" prefHeight="77.0" prefWidth="205.0" />
+      <NeoCheckButtonWithIcon layoutX="23.0" layoutY="57.0" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="144.0" AnchorPane.topAnchor="57.0" />
    </children>
 </AnchorPane>

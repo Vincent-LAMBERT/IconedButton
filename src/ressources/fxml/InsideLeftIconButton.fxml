@@ -21,10 +21,13 @@
                            <children>
                               <ImageView fx:id="icon" fitHeight="71.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <image>
-                                    <Image url="@../images/check.png" />
+                                    <Image url="@../images/race.png" />
                                  </image>
                               </ImageView>
                            </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
                         </AnchorPane>
                         <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" prefHeight="61.0" prefWidth="141.0" text="Label" textAlignment="CENTER" wrapText="true" HBox.hgrow="ALWAYS">
                            <font>
