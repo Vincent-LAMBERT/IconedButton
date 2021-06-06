@@ -33,17 +33,21 @@ import javafx.scene.layout.StackPane;
 /**
  * A button with image at its left
  */
-public class InsideLeftIconButton extends AnchorPane {
+public class NeoCheckButtonWithIcon extends AnchorPane {
     @FXML protected Button btn;
     @FXML protected Label label;
     @FXML protected AnchorPane internAnch;
     @FXML protected AnchorPane imgAnch;
     @FXML protected ImageView icon;
     @FXML protected HBox hbox;
+    @FXML protected ImageView checkIcon;
+    private Image checked = new Image(getClass().getResource("/images/check.png").toString());
+    private Image unchecked = new Image(getClass().getResource("/images/uncheck.png").toString());
+    private boolean check = false;
 
 
-    public InsideLeftIconButton() {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/InsideLeftIconButton.fxml"));
+    public NeoCheckButtonWithIcon() {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/NeoCheckButtonWithIcon.fxml"));
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
         
@@ -66,6 +70,16 @@ public class InsideLeftIconButton extends AnchorPane {
         icon.fitWidthProperty().bind(btn.heightProperty().multiply(1).subtract(4));
         label.minWidthProperty().bind(db.subtract(50));
         label.minHeightProperty().bind(btn.heightProperty().multiply(1).subtract(4));
+    }
+    
+    @FXML
+    protected void buttonClicked() {
+        if (check) {
+            checkIcon.setImage(unchecked);
+        } else {
+            checkIcon.setImage(checked);
+        }
+        check=!check;
     }
     
     public String getText() {

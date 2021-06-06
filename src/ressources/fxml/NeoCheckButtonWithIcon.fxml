@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<fx:root minHeight="73.0" minWidth="206.0" prefHeight="87.0" prefWidth="209.0" type="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root minHeight="73.0" minWidth="206.0" prefHeight="87.0" prefWidth="227.0" type="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="73.0" prefWidth="230.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Button fx:id="btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="73.0" prefWidth="230.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
          <graphic>
             <AnchorPane fx:id="internAnch" prefHeight="65.0" prefWidth="212.0">
                <children>
@@ -39,6 +39,11 @@
                </children>
             </AnchorPane>
          </graphic>
-      </Button>   
+      </Button>
+      <ImageView fx:id="icon1" fitHeight="30.0" fitWidth="30.0" layoutX="197.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/uncheck.png" />
+         </image>
+      </ImageView>   
    </children>
 </fx:root>
