@@ -37,7 +37,7 @@ public class InsideLeftIconButton extends AnchorPane {
     @FXML protected Button btn;
     @FXML protected Label label;
     @FXML protected AnchorPane internAnch;
-    @FXML protected AnchorPane img;
+    @FXML protected ImageView icon;
     @FXML protected HBox hbox;
 
 
@@ -51,7 +51,6 @@ public class InsideLeftIconButton extends AnchorPane {
         } catch (IOException exception) {
             throw new RuntimeException(exception);
         }
-        img.minWidthProperty().bind(internAnch.heightProperty().multiply(1));
         DoubleBinding db = new DoubleBinding() {
             {
                 super.bind(btn.heightProperty(), btn.widthProperty());
@@ -96,11 +95,10 @@ public class InsideLeftIconButton extends AnchorPane {
     private ObjectProperty<Image> image;
 
     public final void setImage(Image image) {
-        Background backgrnd = new Background(new BackgroundImage(image, null, null, null, null));
-        img.setBackground(backgrnd);
+        icon.setImage(image);
     }
     public final Image getImage() {
-        return img.getBackground().getImages().get(0).getImage();
+        return icon.getImage();
     }
 
     private Image oldImage;
@@ -110,7 +108,7 @@ public class InsideLeftIconButton extends AnchorPane {
 
                 @Override
                 public Object getBean() {
-                    return img;
+                    return icon;
                 }
 
                 @Override
@@ -133,7 +131,7 @@ public class InsideLeftIconButton extends AnchorPane {
             imageUrl = new StyleableStringProperty() {
                 @Override
                 public Object getBean() {
-                    return img;
+                    return icon;
                 }
 
                 @Override
