@@ -28,16 +28,13 @@
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
-                           <padding>
-                              <Insets top="9.0" />
-                           </padding>
                         </AnchorPane>
-                        <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" prefHeight="61.0" prefWidth="141.0" text="Label" textAlignment="CENTER" wrapText="true" HBox.hgrow="ALWAYS">
+                        <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="209.0" text="Label" textAlignment="CENTER" wrapText="true" HBox.hgrow="ALWAYS">
                            <font>
                               <Font size="19.0" />
                            </font>
                            <HBox.margin>
-                              <Insets bottom="9.0" right="20.0" />
+                              <Insets right="20.0" />
                            </HBox.margin>
                         </Label>
                      </children>

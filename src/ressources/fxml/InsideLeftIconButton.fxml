@@ -11,11 +11,11 @@
 
 <fx:root minHeight="73.0" minWidth="206.0" prefHeight="104.0" prefWidth="332.0" type="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Button fx:id="btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="104.0" prefWidth="332.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
          <graphic>
-            <AnchorPane fx:id="internAnch">
+            <AnchorPane fx:id="internAnch" prefHeight="65.0" prefWidth="212.0">
                <children>
-                  <HBox fx:id="hbox" alignment="CENTER_LEFT" spacing="10.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
+                  <HBox fx:id="hbox" alignment="CENTER_LEFT" prefHeight="67.0" prefWidth="210.0" spacing="10.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
                      <children>
                         <AnchorPane fx:id="imgAnch" HBox.hgrow="NEVER">
                            <children>
@@ -28,16 +28,13 @@
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
-                           <padding>
-                              <Insets top="9.0" />
-                           </padding>
                         </AnchorPane>
-                        <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" prefHeight="61.0" prefWidth="141.0" text="Label" textAlignment="CENTER" wrapText="true" HBox.hgrow="ALWAYS">
+                        <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="209.0" text="Label" textAlignment="CENTER" wrapText="true" HBox.hgrow="ALWAYS">
                            <font>
                               <Font size="19.0" />
                            </font>
                            <HBox.margin>
-                              <Insets bottom="9.0" right="20.0" />
+                              <Insets right="20.0" />
                            </HBox.margin>
                         </Label>
                      </children>

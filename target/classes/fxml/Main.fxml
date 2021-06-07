@@ -5,6 +5,6 @@
 
 <AnchorPane prefHeight="278.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <NeoCheckButtonWithIcon layoutX="23.0" layoutY="57.0" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="144.0" AnchorPane.topAnchor="57.0" />
+      <NeoCheckButtonWithIcon layoutX="32.0" layoutY="68.0" prefHeight="108.0" prefWidth="272.0" />
    </children>
 </AnchorPane>
