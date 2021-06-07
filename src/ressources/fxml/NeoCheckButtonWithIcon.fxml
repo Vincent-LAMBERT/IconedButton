@@ -21,7 +21,7 @@
                            <children>
                               <ImageView fx:id="icon" fitHeight="88.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="9.0">
                                  <image>
-                                    <Image url="@../images/race.png" />
+                                    <Image url="@../images/check.png" />
                                  </image>
                               </ImageView>
                            </children>

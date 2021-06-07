@@ -62,8 +62,8 @@ public class InsideLeftIconButton extends AnchorPane {
             }
         };
         icon.setPreserveRatio(false);
-        icon.fitHeightProperty().bind(btn.heightProperty().multiply(1).subtract(34));
-        icon.fitWidthProperty().bind(btn.heightProperty().multiply(1).subtract(34));
+        icon.fitHeightProperty().bind(btn.heightProperty().subtract(32));
+        icon.fitWidthProperty().bind(btn.heightProperty().subtract(32));
         label.minWidthProperty().bind(db.subtract(50));
         label.minHeightProperty().bind(btn.heightProperty().multiply(1).subtract(4));
     }
