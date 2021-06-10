@@ -11,7 +11,7 @@
 
 <fx:root minHeight="73.0" minWidth="206.0" prefHeight="104.0" prefWidth="332.0" type="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="104.0" prefWidth="332.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+      <Button fx:id="btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="87.0" prefWidth="208.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <graphic>
             <AnchorPane fx:id="internAnch" prefHeight="65.0" prefWidth="212.0">
                <children>
