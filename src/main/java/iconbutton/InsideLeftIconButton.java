@@ -54,17 +54,16 @@ public class InsideLeftIconButton extends AnchorPane {
         }
         DoubleBinding db = new DoubleBinding() {
             {
-                super.bind(btn.heightProperty(), btn.widthProperty());
+                super.bind(imgAnch.widthProperty(), btn.widthProperty());
             }
             @Override
             protected double computeValue() {
-                return (btn.widthProperty().get() - btn.heightProperty().get());
+                return (btn.widthProperty().get() - imgAnch.widthProperty().get());
             }
         };
-        icon.setPreserveRatio(false);
         icon.fitHeightProperty().bind(btn.heightProperty().subtract(26));
         icon.fitWidthProperty().bind(btn.heightProperty().subtract(26));
-        label.minWidthProperty().bind(db.subtract(50));
+        label.minWidthProperty().bind(db.divide(1.25));
         label.minHeightProperty().bind(btn.heightProperty().multiply(1).subtract(4));
     }
     

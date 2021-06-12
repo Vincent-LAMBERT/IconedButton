@@ -65,10 +65,9 @@ public class NeoCheckButtonWithIcon extends AnchorPane {
                 return (btn.widthProperty().get() - btn.heightProperty().get());
             }
         };
-        icon.setPreserveRatio(false);
         icon.fitHeightProperty().bind(btn.heightProperty().subtract(26));
         icon.fitWidthProperty().bind(btn.heightProperty().subtract(26));
-        label.minWidthProperty().bind(db.subtract(50));
+        label.minWidthProperty().bind(db.divide(1.25));
         label.minHeightProperty().bind(btn.heightProperty().multiply(1).subtract(4));
     }
     
