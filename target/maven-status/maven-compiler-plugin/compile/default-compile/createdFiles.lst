@@ -13,6 +13,7 @@ iconbutton/InsideLeftIconButton$2.class
 iconbutton/MultipleButtons$3.class
 iconbutton/NeoCheckButton$1.class
 iconbutton/MultipleButtons$5.class
+iconbutton/CustomProgressIndicator.class
 iconbutton/events/NoButtonEvent.class
 iconbutton/InsideLeftIconButton$4.class
 iconbutton/events/SoButtonEvent.class

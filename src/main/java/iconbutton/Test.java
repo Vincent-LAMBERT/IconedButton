@@ -11,6 +11,7 @@ import iconbutton.events.SoButtonEvent;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.paint.Color;
 
 public class Test implements Initializable {
     @FXML
@@ -23,52 +24,10 @@ public class Test implements Initializable {
     }
     
     @FXML
-    protected void handleCentral(CentralButtonEvent event){
-        System.out.println("Central");
+    protected void progressAct(ActionEvent event){
+        prog.setProgress(0.5);
+        prog.setColor(Color.RED);
     }
     
-    @FXML 
-    protected void handleSo(SoButtonEvent event){
-        System.out.println("So");
-    }
-    
-    @FXML 
-    protected void handleSe(SeButtonEvent event){
-        System.out.println("Se");
-    }
-    
-    @FXML 
-    protected void handleNe(NeButtonEvent event){
-        System.out.println("Ne");
-    }
-    
-    @FXML 
-    protected void handleNo(NoButtonEvent event){
-        System.out.println("No");
-    }
-
-    @FXML
-    protected void disableCentral(ActionEvent event) {
-        multiple.setVisibleCentral(!multiple.isVisibleCentral());
-    }
-
-    @FXML
-    protected void disableSo(ActionEvent event) {
-        multiple.setVisibleSo(!multiple.isVisibleSo());
-    }
-
-    @FXML
-    protected void disableSe(ActionEvent event) {
-        multiple.setVisibleSe(!multiple.isVisibleSe());
-    }
-
-    @FXML
-    protected void disableNe(ActionEvent event) {
-        multiple.setVisibleNe(!multiple.isVisibleNe());
-    }
-
-    @FXML
-    protected void disableNo(ActionEvent event) {
-        multiple.setVisibleNo(!multiple.isVisibleNo());
-    }
+    @FXML CustomProgressIndicator prog;
 }

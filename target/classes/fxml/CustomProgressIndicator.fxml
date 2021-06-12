@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Arc?>
+
+
+<fx:root minHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="50.0" type="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Arc fx:id="arc" fill="#0088ff00" length="270.0" radiusX="25.0" radiusY="25.0" startAngle="90.0" stroke="RED" strokeDashOffset="5.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="5.0" strokeType="INSIDE" strokeWidth="5.0" />
+         </children>
+      </StackPane>
+   </children>
+</fx:root>
