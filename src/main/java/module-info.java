@@ -1,6 +1,6 @@
 module iconbutton {
     requires javafx.controls;
     requires javafx.fxml;
-    opens iconbutton to javafx.fxml;
-    exports iconbutton;
+    opens miscellaneousWidgets to javafx.fxml;
+    exports miscellaneousWidgets;
 }
