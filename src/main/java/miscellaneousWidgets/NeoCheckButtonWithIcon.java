@@ -41,6 +41,7 @@ public class NeoCheckButtonWithIcon extends AnchorPane {
     @FXML protected ImageView icon;
     @FXML protected HBox hbox;
     @FXML protected ImageView checkIcon;
+    private int userValue;
     private Image checked = new Image(getClass().getResource("/images/check.png").toString());
     private Image unchecked = new Image(getClass().getResource("/images/uncheck.png").toString());
     private boolean check = false;
@@ -71,14 +72,36 @@ public class NeoCheckButtonWithIcon extends AnchorPane {
         label.minHeightProperty().bind(btn.heightProperty().multiply(1).subtract(4));
     }
     
+    
     @FXML
     protected void buttonClicked() {
         if (check) {
-            checkIcon.setImage(unchecked);
+            uncheck();
         } else {
-            checkIcon.setImage(checked);
+            check();
         }
-        check=!check;
+    }
+
+    public void setUserValue(int value) {
+        userValue=value;
+    }
+
+    public int getUserValue() {
+        return userValue;
+    }
+
+    public void check() {
+        icon.setImage(checked);
+        check=true;
+    }
+
+    public void uncheck() {
+        icon.setImage(unchecked);
+        check=false;
+    }
+
+    public boolean isChecked() {
+        return check;
     }
     
     public String getText() {

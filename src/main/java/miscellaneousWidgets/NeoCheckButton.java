@@ -26,6 +26,7 @@ import javafx.scene.layout.StackPane;
 public class NeoCheckButton extends AnchorPane {
     @FXML protected Button button;
     @FXML protected ImageView icon;
+    private int userValue;
     private Image checked = new Image(getClass().getResource("/images/check.png").toString());
     private Image unchecked = new Image(getClass().getResource("/images/uncheck.png").toString());
     private boolean check = false;
@@ -50,17 +51,37 @@ public class NeoCheckButton extends AnchorPane {
     public void setText(String value) {
         button.setText(value);
     }
+
+    public void setUserValue(int value) {
+        userValue=value;
+    }
+
+    public int getUserValue() {
+        return userValue;
+    }
     
     @FXML
     protected void buttonClicked() {
         if (check) {
-            icon.setImage(unchecked);
+            uncheck();
         } else {
-            icon.setImage(checked);
+            check();
         }
-        check=!check;
     }
 
+    public void check() {
+        icon.setImage(checked);
+        check=true;
+    }
+
+    public void uncheck() {
+        icon.setImage(unchecked);
+        check=false;
+    }
+
+    public boolean isChecked() {
+        return check;
+    }
 
     public final ObjectProperty<EventHandler<ActionEvent>> onActionProperty() { return onAction; }
     public final void setOnAction(EventHandler<ActionEvent> value) { onActionProperty().set(value); }

@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
 
 <fx:root minHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="50.0" type="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Arc fx:id="arc" fill="#0088ff00" length="270.0" radiusX="25.0" radiusY="25.0" startAngle="90.0" stroke="RED" strokeDashOffset="5.0" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeMiterLimit="5.0" strokeType="INSIDE" strokeWidth="5.0" />
+            <Circle fill="#bd797900" layoutX="25.0" layoutY="25.0" radius="25.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Arc fx:id="arc" fill="#0088ff00" layoutX="25.0" layoutY="25.0" length="30.0" radiusX="22.0" radiusY="22.0" startAngle="90.0" stroke="RED" strokeDashOffset="5.0" strokeLineJoin="ROUND" strokeMiterLimit="5.0" strokeWidth="5.0" />
          </children>
-      </StackPane>
+      </Pane>
    </children>
 </fx:root>
