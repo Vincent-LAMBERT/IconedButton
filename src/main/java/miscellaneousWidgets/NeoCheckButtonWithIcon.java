@@ -59,11 +59,11 @@ public class NeoCheckButtonWithIcon extends AnchorPane {
         }
         DoubleBinding db = new DoubleBinding() {
             {
-                super.bind(btn.heightProperty(), btn.widthProperty());
+                super.bind(imgAnch.widthProperty(), btn.widthProperty());
             }
             @Override
             protected double computeValue() {
-                return (btn.widthProperty().get() - btn.heightProperty().get());
+                return (btn.widthProperty().get() - imgAnch.widthProperty().get());
             }
         };
         icon.fitHeightProperty().bind(btn.heightProperty().subtract(26));
@@ -91,12 +91,12 @@ public class NeoCheckButtonWithIcon extends AnchorPane {
     }
 
     public void check() {
-        icon.setImage(checked);
+        checkIcon.setImage(checked);
         check=true;
     }
 
     public void uncheck() {
-        icon.setImage(unchecked);
+        checkIcon.setImage(unchecked);
         check=false;
     }
 
